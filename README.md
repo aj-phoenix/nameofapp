@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My name is A.J. Phoenix. I'm a creative bent on changing the world for creatives.
 
 Things you may want to cover:
 
