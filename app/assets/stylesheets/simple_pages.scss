@@ -1,3 +1,33 @@
 // Place all the styles related to the simple_pages controller here.
+h1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #00cd00;
+  text-align: center;
+  padding: 50px;
+}
+h2, p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #FF0000;
+  text-align: center;
+}
+a {
+  padding-left: 5px;
+}
+#myNavbar {
+  text-transform: uppercase;
+  color: steelblue !important;
+}
+body {
+  background: {
+    image: asset_url("kwclogo.jpg");
+    attachment: fixed;
+    size: cover;
+    padding-top: 10px 10px 10px 10px;
+  }
+}
+.img-responsive{
+  position: relative;
+  margin-left: 300px;
+}
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
