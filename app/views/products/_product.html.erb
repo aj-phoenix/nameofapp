@@ -1,5 +1,5 @@
-
-<div class="col-sm-6 <%= "col-sm-12" if @products.length === 1 %>">
+<% cache product do %>
+ <div class="col-sm-6 <%= "col-sm-12" if @products.length === 1 %>">
 	<%= image_tag(product.image_url, class: "img-responsive") unless product.image_url.blank? %>
 	<a href="#"><h3><%= product.name %></h3></a>
 	<p><%= product.description %></p>
@@ -10,4 +10,5 @@
 	<span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
 	<br>
 	<span><%= link_to 'New Product', new_product_path %></span>
-</div> <!-- /col-sm-4 -->
+ </div> <!-- /col-sm-4 -->
+<% end %>

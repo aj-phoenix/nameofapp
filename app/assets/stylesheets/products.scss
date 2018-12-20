@@ -1,3 +1,165 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.products-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-gallery-name {
+  font-size: 1.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-gallery-decription {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.product-gallery-color {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.product-gallery-price {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.product-galleryprice-tag  {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.productname-show {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-gallery-edit p {
+  float:right;
+  padding-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  font-size: 0.9em;
+}
+
+p.horizontal-line::after {
+ content: '';
+ position: absolute;
+ width: 0.1em;
+ height: 1em;
+ margin-left: 1%;
+ margin-top: 1%;
+ background: #3d3c3c;
+}
+
+.product-gallery-info {
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#notice {
+  color: #cba90d!important;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.product_create {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  float: none;
+  background-color: transparent;
+  border: 1px solid #3d3c3c;
+}
+
+.product_create:hover {
+  background-color: #3d3c3c!important;
+  color: white;
+  border: none;
+}
+
+.product_create:active {
+  color:white!important;
+}
+
+.product-edit-title {
+  font-weight: bold;
+}
+
+.product-edit-field {
+  margin-bottom: 3%;
+}
+
+.product-form {
+  max-width: 800px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-comments-user {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.product-comments-star {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.product-comments-text {
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+.product-comments {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.star-rating {
+  margin-top: -1em;
+  margin-bottom: 3em;
+}
+
+.text-bold {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.pagination > * {
+  margin-left: 1em;
+}
+
+#comment-margins {
+  margin-top: 1em;
+}
+
+.productinfo-left {
+  display: inline;
+  padding-left: 0;
+  padding-right: 1px;
+}
+
+.productinfo-right {
+  padding-left: 30px;
+  padding-right: 0;
+  display: inline;
+}
