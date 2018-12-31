@@ -6,10 +6,11 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12 col-lg-6">
+    <div class="col-sm-8 col-md-4">
       <% cache @products do %>
           <%= render @products %>
         <% end %>
     </div> <!-- col -->
   </div> <!-- row -->
 </div> <!-- container -->
+<span><%= link_to 'New Product', new_product_path %></span>
