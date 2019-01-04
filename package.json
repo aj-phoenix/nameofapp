@@ -2,7 +2,7 @@
   "name": "nameofapp",
   "private": true,
   "dependencies": {},
-  "engines:" {
+  "engines:": {
     "yarn": ">=0.25.2"
   }
 }
