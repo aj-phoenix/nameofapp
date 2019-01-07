@@ -1,10 +1,10 @@
 <div class="product_index_page">
 
 
-<h1 id="products_header">Our Products</h1>
+ <h1 id="products_header">Our Products</h1>
 
 
-<div class="container-fluid">
+ <div class="container-fluid">
   <div class="row">
     <div class="col-sm-8 col-md-4">
       <% cache @products do %>
@@ -12,12 +12,13 @@
         <% end %>
     </div> <!-- col -->
   </div> <!-- row -->
-</div> <!-- container -->
-<span><%= link_to 'New Product', new_product_path %></span>
-<p>
+ </div> <!-- container -->
+ <span><%= link_to 'New Product', new_product_path %></span>
+ <p>
   <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
 
   <% if signed_in? && current_user.admin? %>
     <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
-</p>
+ </p>
+</div>
