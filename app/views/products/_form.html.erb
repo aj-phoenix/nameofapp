@@ -11,34 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-group product-form">
+    <%= form.label :name, class:"product-edit-title" %>
+    <%= form.text_field :name, class:"form-control product-edit-field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group product-form">
+    <%= form.label :description, class:"product-edit-title" %>
+    <%= form.text_area :description, class:"form-control product-edit-field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :text %>
-    <%= form.text_field :text %>
+  <div class="form-group product-form">
+    <%= form.label :image_url, class:"product-edit-title" %>
+    <%= form.text_field :image_url, class:"form-control product-edit-field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
+  <div class="form-group product-form">
+    <%= form.label :color, class:"product-edit-title" %>
+    <%= form.text_field :color, class:"form-control product-edit-field" %>
   </div>
-  <div class="field">
-   <%= form.label :color %><br>
-   <%= form.text_field :color %>
+  <div class="form-group product-form">
+    <%= form.label :price, class:"product-edit-title" %>
+    <%= form.text_field :price, class:"form-control product-edit-field" %>
   </div>
-  <div class="field">
-   <%= form.label :price %><br>
-   <%= form.text_field :price %>
-  </div>
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group product-form">
+    <%= form.submit 'Submit', class:"btn btn-light product_create" %>
   </div>
 <% end %>

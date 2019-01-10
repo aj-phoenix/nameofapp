@@ -28,9 +28,9 @@
      </div><!-- end navbar-header -->
      <div class="navbar-collapse collapse">
        <ul class="nav navbar-nav navbar-right">
-         <li><%= link_to "About", "/simple_pages/about" %></li>
-         <li><%= link_to "Contact", "simple_pages/contact" %></li>
-         <li><%= link_to "Products", "/products" %></li>
+         <li><%= link_to "About", simple_pages_about_path %></li>
+         <li><%= link_to "Contact", simple_pages_contact_path %></li>
+         <li><%= link_to "Products", products_path %></li>
          <li>
           <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
            <%= form.label :q, 'Search for:' %>
@@ -38,16 +38,14 @@
            <%= form.submit 'Search' %>
           <% end %>
          </li>
-       </ul>
-       <ul class="navbar-nav ml-auto">
-        <% if user_signed_in? %>
-        <li class="nav-item">
+         <% if user_signed_in? %>
+         <li class="nav-item">
          <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-        </li>
-        <% else %>
-        <li class="nav-item">
-         <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-        </li>
+         </li>
+         <% else %>
+         <li class="nav-item">
+          <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+         </li>
         <% end %>
         </li>
       </ul>
@@ -56,8 +54,13 @@
  </nav><!-- end navbar -->
 
   <%= yield %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice %>
+  <p class="alert alert-success success-note" role="alert"><%= notice %></p>
+  <% end %>
+
+  <% if alert %>
+  <p class="alert alert-danger alert-note" role="alert"><%= alert %></p>
+  <% end %>
  </body>
  <footer>
   &copy; 2019 A.J. Phoenix

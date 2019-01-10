@@ -1,27 +1,27 @@
 <div class ="index-content">
  <div class ="container">
   <div class ="row" data-product-id="<%= @product.id %>">
-       <p id="notice"><%= notice %></p>
-   <div class="col-sm-12 col-lg-6 productinfo-left">
-    <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
-   </div>
+    <p id="notice"><%= notice %></p>
+    <div class="col-sm-12 col-lg-6 productinfo-left">
+      <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
+      <%= link_to 'Edit', edit_product_path(@product) %>
+      <%= link_to 'Back', products_path %>
+    </div>
    <div class="col-sm-12 col-lg-6 productinfo-right">
-     <p class-"productname-show">
+     <p class="productname-show">
       <%= @product.name %>
     </p>
     <p class="product-gallery-description">
-     <%= @product.description %>
+      <%= @product.description %>
     </p>
     <p>
-     <%= @product.text %>
+      <%= @product.text %>
     </p>
     <p class="product-gallery-description">
-     <%= @product.color %>
+      <%= @product.color %>
     </p>
     <p class="product-galleryprice-tag">
-     <%= @product.price %>
+      <%= @product.price %>
     </p>
    </div>
   </div>
