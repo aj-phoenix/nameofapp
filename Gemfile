@@ -67,5 +67,7 @@ gem 'devise'
 
 gem 'cancancan', '~> 2.0'
 
+gem 'rails-controller-testing'
+
 ## Gemfile for Paginate
 gem 'will_paginate', '~> 3.1.0'
