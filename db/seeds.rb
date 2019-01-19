@@ -5,5 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(name: "KWC Hoodie", description: "The super warm KWC Branded Hoodie", image_url: "sweatshirts.jpeg")
-Product.create(name: "KWC T-Shirt", description: "The KWC T Shirt", image_url: "tshirts.jpg")
+Product.create(name: "KWC Hoodie", description: "The super warm KWC Branded Hoodie", image_url: "sweatshirts.jpeg", price: "$45")
+Product.create(name: "KWC T-Shirt", description: "The KWC T Shirt", image_url: "tshirts.jpg", price: "$20")
+Product.create(name: "KWC Mug", description: "The Perfect Mug for Mondays", image_url: "kwcmug.jpg", price: "$10")
