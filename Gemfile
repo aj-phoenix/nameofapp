@@ -75,5 +75,7 @@ gem 'stripe'
 
 gem 'dalli'
 
+gem 'redis-rails'
+
 ## Gemfile for Paginate
 gem 'will_paginate', '~> 3.1.0'
