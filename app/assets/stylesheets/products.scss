@@ -1,165 +1,159 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.products-content {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3%;
-  margin-left: auto;
-  margin-right: auto;
+html,
+body {
+   margin: 0;
+   height: 100%;
+   background-color: #b9c5c4;
 }
 
-.product-gallery-name {
-  font-size: 1.15em;
-  font-weight: 600;
-  text-transform: uppercase;
+body {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-color: #b9c5c4;
 }
 
-.product-gallery-decription {
-  font-size: 1em;
-  font-weight: 300;
+.alert-container {
+  padding-top: 95px;
 }
 
-.product-gallery-color {
-  font-size: 1em;
-  font-weight: 300;
+h1 {
+  font-size: 3em;
+  color: #000;
+  padding-top: 50px;
 }
 
-.product-gallery-price {
-  font-size: 1em;
-  font-weight: bold;
+h2 {
+  font-size: 2.5em;
+  color: #b9c5c4;
+  padding-top: 10px;
+  font-weight: 700;
 }
 
-.product-galleryprice-tag  {
-  font-size: 2em;
-  font-weight: bold;
+h2 a:visited {
+  color: #b9c5c4;
 }
 
-.productname-show {
-  font-size: 1.5em;
-  font-weight: 600;
-  text-transform: uppercase;
+h3 {
+  color: #fff;
 }
 
-.product-gallery-edit p {
-  float:right;
-  padding-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 8%;
-  font-size: 0.9em;
+p {
+
 }
 
-p.horizontal-line::after {
- content: '';
- position: absolute;
- width: 0.1em;
- height: 1em;
- margin-left: 1%;
- margin-top: 1%;
- background: #3d3c3c;
+@media (max-width:762px){
+  h1 {
+    padding-top: 50px;
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  #search-bar {
+    padding-top: 5px;
+  }
 }
 
-.product-gallery-info {
-  background-color: white;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+.product-partial,
+.single-product {
+  background-color: #fff;
+  border-radius: 25px;
 }
 
-#notice {
-  color: #cba90d!important;
-  font-size: 2em;
-  font-weight: bolder;
-  padding-bottom: 2em;
-  text-align: center;
+.product-partial {
+  margin: 5px;
 }
 
-.product_create {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  float: none;
+.single-product {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.img-responsive {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-grid {
+  color: #000;
+  padding: 10px;
+}
+
+.product-info {
+  font-size: 1.2em;
+}
+
+.edit {
+  font-size: 0.8em;
+}
+
+.new-product {
+  float: right;
+  margin: 0px 30px 30px 0px;
+}
+
+.review {
+  border-style: solid;
+  border-color: #b9c5c4;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.new-product a,
+.new-product a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+p a,
+p a:visited,
+.product-grid a {
+  text-decoration: none;
+  color: #000;
+}
+
+.new-product a:hover,
+p a:hover,
+.product-grid a:hover {
   background-color: transparent;
-  border: 1px solid #3d3c3c;
+  color: #b9c5c4;
 }
 
-.product_create:hover {
-  background-color: #3d3c3c!important;
-  color: white;
-  border: none;
+.form-label,
+.form-control {
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.product_create:active {
-  color:white!important;
+.product-reviews {
+  padding-top: 10px;
 }
 
-.product-edit-title {
-  font-weight: bold;
+.user-reviews,
+.rated {
+  padding-bottom: 5px;
 }
 
-.product-edit-field {
-  margin-bottom: 3%;
+.pagination {
+  text-align: center;
+  padding: 1em;
+  display: inline-block;
 }
-
-.product-form {
-  max-width: 800px;
-  max-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+.pagination a, .pagination span {
+  padding: 0.5em;
 }
-
-.product-comments-user {
-  font-size: 1em;
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 1em;
+.pagination .disabled {
+  color: #aaaaaa;
 }
-
-.product-comments-star {
-  padding-left: 2em;
-  padding-right: 2em;
+.pagination .current {
+  color: #b9c5c4;
+  font-weight: 900;
+  padding: 0.5em;
 }
-
-.product-comments-text {
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 1em;
-  margin-right: 2em;
-}
-
-.product-comments {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-.star-rating {
-  margin-top: -1em;
-  margin-bottom: 3em;
-}
-
-.text-bold {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-.pagination > * {
-  margin-left: 1em;
-}
-
-#comment-margins {
-  margin-top: 1em;
-}
-
-.productinfo-left {
-  display: inline;
-  padding-left: 0;
-  padding-right: 1px;
-}
-
-.productinfo-right {
-  padding-left: 30px;
-  padding-right: 0;
-  display: inline;
+.pagination a:hover {
+  text-decoration: none;
+  color: #b9c5c4;
 }

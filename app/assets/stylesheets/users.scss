@@ -1,3 +1,58 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html,
+body {
+   margin: 0;
+   height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-color: #b9c5c4;
+}
+
+.alert-container {
+  padding-top: 95px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #000;
+  padding-top: 50px;
+}
+
+@media (max-width:762px){
+  h1 {
+    padding-top: 50px;
+    font-size: 2.5em;
+  }
+  #search-bar {
+    padding-top: 5px;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #b9c5c4;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.form-label,
+.form-control {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+a.register-links ,
+a:visited.register-links {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover.register-links,
+a:hover.user-edit {
+  background-color: transparent;
+  color: #fff;
+}
